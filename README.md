@@ -1,7 +1,8 @@
 # US_Household_Income
 
 ```SQL
-#Check and clean data 
+#Check and clean data
+
 SELECT * 
 FROM us_project.us_household_income;
 
@@ -11,6 +12,7 @@ FROM us_project.us_household_income_statistics;
 ALTER TABLE us_project.us_household_income_statistics RENAME COLUMN `ï»¿id` TO `Id`;
 
 #Identify duplicates
+
 SELECT COUNT(id) 
 FROM us_project.us_household_income;
 
@@ -18,6 +20,7 @@ SELECT COUNT(id)
 FROM us_project.us_household_income_statistics;
 
 #Identify duplicates
+
 SELECT id, COUNT(id) 
 FROM us_project.us_household_income
 GROUP BY id
@@ -29,6 +32,7 @@ FROM (SELECT row_id, id, ROW_NUMBER() OVER(PARTITION BY id ORDER BY id) AS row_n
 WHERE row_num > 1;
 
 #Delete the duplicates
+
 DELETE FROM us_household_income
 WHERE row_id IN
         (SELECT row_id
@@ -39,6 +43,7 @@ WHERE row_id IN
 	      WHERE row_num > 1);
 
 #To double-check if there are no duplicates
+
 SELECT id, COUNT(id) 
 FROM us_project.us_household_income
 GROUP BY id
@@ -50,6 +55,7 @@ GROUP BY id
 HAVING COUNT(id) > 1;
 
 #Correcting a spelling error in a state name
+
 SELECT State_Name, COUNT(State_Name)
 FROM us_project.us_household_income
 GROUP BY State_Name;
@@ -73,6 +79,7 @@ FROM us_project.us_household_income
 ORDER BY 1;
 
 #Populate missing value
+
 SELECT * 
 FROM us_project.us_household_income
 WHERE place = '';
@@ -87,6 +94,7 @@ WHERE county = 'Autauga County'
 AND city = 'Vinemont';
 
 #Check for any errors or duplications
+
 SELECT type, COUNT(type) 
 FROM us_project.us_household_income
 GROUP BY type;
@@ -104,10 +112,12 @@ FROM us_project.us_household_income
 WHERE ALand = 0 OR ALand = '' OR ALand IS NULL;
 
 #Exploratory Data Analysis
+
 SELECT State_Name, county, city, ALand, AWater
 FROM us_project.us_household_income;
 
 #Which state has the most land and water(lake and stream)
+
 SELECT State_Name, SUM(ALand), SUM(AWater)
 FROM us_project.us_household_income
 GROUP BY State_Name
@@ -119,6 +129,7 @@ GROUP BY State_Name
 ORDER BY 3 DESC;
 
 #Top 10 larger state by land and water
+
 SELECT State_Name, SUM(ALand), SUM(AWater)
 FROM us_project.us_household_income
 GROUP BY State_Name
@@ -132,6 +143,7 @@ ORDER BY 3 DESC
 LIMIT 10;
 
 #Join tables
+
 SELECT * 
 FROM us_project.us_household_income u
 JOIN us_project.us_household_income_statistics us
@@ -150,6 +162,7 @@ JOIN us_project.us_household_income_statistics us
 WHERE Mean <> 0;
 
 #Top 10 States with the Lowest Mean Income
+
 SELECT u.State_Name, ROUND(AVG(mean),1), ROUND(AVG(median),1)
 FROM us_project.us_household_income u
 JOIN us_project.us_household_income_statistics us
@@ -160,6 +173,7 @@ ORDER BY ROUND(AVG(mean))
 LIMIT 10;
 
 #Top 15 States with the Highest Mean Income
+
 SELECT u.State_Name, ROUND(AVG(mean),1), ROUND(AVG(median),1)
 FROM us_project.us_household_income u
 JOIN us_project.us_household_income_statistics us
@@ -170,6 +184,7 @@ ORDER BY ROUND(AVG(mean))DESC
 LIMIT 15;
 
 #Top 10 States with the Lowest Median Income
+
 SELECT u.State_Name, ROUND(AVG(mean),1), ROUND(AVG(median),1)
 FROM us_project.us_household_income u
 JOIN us_project.us_household_income_statistics us
@@ -180,6 +195,7 @@ ORDER BY ROUND(AVG(median))
 LIMIT 10;
 
 #Top 10 States with the Highest Median Income
+
 SELECT u.State_Name, ROUND(AVG(mean),1), ROUND(AVG(median),1)
 FROM us_project.us_household_income u
 JOIN us_project.us_household_income_statistics us
@@ -190,6 +206,7 @@ ORDER BY 3 DESC
 LIMIT 10;
 
 #The region with the highest mean household income
+
 SELECT Type, COUNT(type), ROUND(AVG(mean),1), ROUND(AVG(median),1)
 FROM us_project.us_household_income u
 JOIN us_project.us_household_income_statistics us
@@ -200,6 +217,7 @@ ORDER BY 3 DESC
 LIMIT 15;
 
 #The region with the highest median household income
+
 SELECT Type, COUNT(type), ROUND(AVG(mean),1), ROUND(AVG(median),1)
 FROM us_project.us_household_income u
 JOIN us_project.us_household_income_statistics us
@@ -210,12 +228,15 @@ ORDER BY 4 DESC
 LIMIT 15;
 
 #What states that have community
+
 SELECT *
 FROM us_project.us_household_income
 WHERE type = 'Community';
+
 # Puerto Rico has community
    
 #Top 15 cities with the highest median household income
+
 SELECT u.State_Name, city, ROUND(AVG(median),1)
 FROM us_project.us_household_income u
 JOIN us_project.us_household_income_statistics us
@@ -225,6 +246,7 @@ ORDER BY 2 DESC
 LIMIT 15;
 
 #Top 15 cities with the highest mean and median household income
+
 SELECT u.State_Name, city, ROUND(AVG(mean),1), ROUND(AVG(median),1)
 FROM us_project.us_household_income u
 JOIN us_project.us_household_income_statistics us
