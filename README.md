@@ -255,5 +255,7 @@ GROUP BY u.State_Name, city
 ORDER BY ROUND(AVG(mean),1) DESC
 LIMIT 15;
 ```
-## Tableau Visualization: https://public.tableau.com/app/profile/nanthawan.maneethong/viz/HouseholdIncomeinTheU_S_/Dashboard1
-## Data Source: www.analystbuilder.com/courses/mysql-for-data-analytics
+## Tableau Visualization: 
+https://public.tableau.com/app/profile/nanthawan.maneethong/viz/HouseholdIncomeinTheU_S_/Dashboard1
+## Data Source: 
+www.analystbuilder.com/courses/mysql-for-data-analytics
