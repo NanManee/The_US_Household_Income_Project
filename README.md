@@ -323,11 +323,11 @@ the United States exhibits a diverse economic landscape, with the Southeast host
 ### Answer to question 2: What are the top 5 cities with the highest average median household income, and what factors contribute to this higher income?
 
 - These are the top 5 cities with the highest average median household income:
-	- 1 San Diego	$109,419
- 	- 2 New York	$100,340
-  	- 3 Houston	$91,549
-  	- 4 Dallas	$89,019
-   	- 5 Las Vegas	$84,713
+	- 1. San Diego	$109,419
+ 	- 2. New York	$100,340
+  	- 3. Houston	$91,549
+  	- 4. Dallas	$89,019
+   	- 5. Las Vegas	$84,713
   
 - Many factors contribute to the differences in the highest and lowest household income in each city. The common contributing factors may include:
 
