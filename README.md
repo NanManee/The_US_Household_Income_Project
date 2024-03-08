@@ -3,6 +3,14 @@
 ![Screenshot 2024-02-02 174945](https://github.com/NanManee/The_US_Household_Income_Project/assets/156528525/15b4f219-1d71-4282-9665-076f5ed73b8b)
 
 
+### Data Source
+
+www.analystbuilder.com/courses/mysql-for-data-analytics
+
+This dataset does not include year information; thus, I cannot specify how recent this data is. The instructor may focus more on data wrangling for learning purposes than on current statistics.
+
+
+
 ```SQL
 #Check and clean data
 
