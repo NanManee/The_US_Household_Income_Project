@@ -2,6 +2,17 @@
 
 ![Screenshot 2024-02-02 174945](https://github.com/NanManee/The_US_Household_Income_Project/assets/156528525/15b4f219-1d71-4282-9665-076f5ed73b8b)
 
+### Project Task
+
+- Gather and analyze household income data for various cities.
+- Research and identify potential factors contributing to higher income levels in these cities.
+- Present findings and insights through data visualization and interpretation.
+- Collect household income data for different geographic regions in the United States
+
+### Questions to answers
+
+- What are the top 5 cities with the highest average median household income, and what factors contribute to this higher income?
+- How does household income vary by geographic region in the United States, and what factors contribute to these differences?
 
 ### Data Source
 
@@ -9,6 +20,11 @@ www.analystbuilder.com/courses/mysql-for-data-analytics
 
 This dataset does not include year information, so the instructor may focus more on data wrangling for learning purposes than on current statistics.
 
+### Tools
+
+MySQL - Data Cleaning and Data Analysis
+
+Tableau - Data visualization
 
 
 ```SQL
@@ -302,3 +318,27 @@ https://public.tableau.com/app/profile/nanthawan.maneethong/viz/HouseholdIncomei
 
 - In summary: 
 the United States exhibits a diverse economic landscape, with the Southeast hosting the majority of lower-income states, the Northeast and certain Western states presenting higher median household incomes, and the Midwest, along with a mix of states from other regions, reflecting middle-income levels. This distribution highlights the varying economic conditions and living standards across the country.
+
+
+### Answer to question 2: What are the top 5 cities with the highest average median household income, and what factors contribute to this higher income?
+
+- These are the top 5 cities with the highest average median household income:
+	1 San Diego	$109,419
+ 	2 New York	$100,340
+  	3 Houston	$91,549
+  	4 Dallas	$89,019
+   	5 Las Vegas	$84,713
+  
+- Many factors contribute to the differences in the highest and lowest household income in each city. The common contributing factors may include:
+
+  	- Cost of Living: The cost of living, including housing costs, utilities, transportation, and healthcare expenses, affects household income levels. Cities with a higher cost of living may require higher incomes to maintain a certain standard of living.
+	- Income Inequality: Inequalities in income distribution within a city can contribute to differences in household income levels. Factors such as wage gaps, access to economic resources, and socioeconomic status influence income inequality.
+	- Economic Opportunities: Cities with diverse industries and a strong job market tend to have higher household incomes, such as job availability, wages, and career opportunities influence household income levels.
+	- Education and Skill Levels: Cities with higher levels of education and skilled workforce often have higher household incomes. Access to quality education and training programs can impact earning potential.
+	- Housing Market: The availability and affordability of housing options in a city impact household income levels. Cities with a competitive housing market and limited affordable housing options may have higher household incomes to afford housing expenses.
+	- Geographic Location: Geographical factors such as climate, natural resources, and proximity to urban centers can impact household income levels. Cities located in regions with favorable economic conditions or natural amenities may have higher household incomes.
+- In summary:
+Overall, a combination of these factors contributes to the differences in the highest and lowest household income in each city. Understanding these factors is essential for policymakers, urban planners, and community leaders to address income disparities and promote economic prosperity for all residents.
+
+
+
