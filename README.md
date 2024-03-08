@@ -7,7 +7,7 @@
 
 www.analystbuilder.com/courses/mysql-for-data-analytics
 
-This dataset does not include year information; thus, I cannot specify how recent this data is. The instructor may focus more on data wrangling for learning purposes than on current statistics.
+This dataset does not include year information, so the instructor may focus more on data wrangling for learning purposes than on current statistics.
 
 
 
