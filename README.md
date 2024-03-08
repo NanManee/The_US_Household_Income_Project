@@ -1,5 +1,8 @@
 # US_Household_Income
 
+![Screenshot 2024-02-02 174945](https://github.com/NanManee/The_US_Household_Income_Project/assets/156528525/15b4f219-1d71-4282-9665-076f5ed73b8b)
+
+
 ```SQL
 #Check and clean data
 
