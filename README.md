@@ -266,7 +266,37 @@ GROUP BY u.State_Name, city
 ORDER BY ROUND(AVG(mean),1) DESC
 LIMIT 15;
 ```
+
 ## Tableau Visualization: 
+
 https://public.tableau.com/app/profile/nanthawan.maneethong/viz/HouseholdIncomeinTheU_S_/Dashboard1
-## Data Source: 
-www.analystbuilder.com/courses/mysql-for-data-analytics
+
+### Limitations
+- This project is part of my Data Analysis course from Analyst Builder. The dataset lacks yearly information, preventing the presentation of trends over the past decade.
+- This dataset does not include information on urban, suburban, and rural areas, so we cannot examine how household income distribution varies across these areas.
+
+### Insights
+
+### How does household income vary by geographic region in the United States, and what factors contribute to these differences?
+ 
+### Eight Southeastern states account for the majority of states with an average median household income below $70,000, followed by one state each from the Northeast and the Southwest:
+
+- Southeastern States: West Virginia, Kentucky, Tennessee, Arkansas, Louisiana, Mississippi, Alabama, and South Carolina.
+- Northeastern State: Maine.
+- Southwestern State: Oklahoma.
+
+### Seven Northeastern states account for the majority of states with an average median household income above $100,000, followed by six states from the West and one from the Southeast:
+
+- Northeastern States: New York, New Hampshire, New Jersey, Massachusetts, Rhode Island, Connecticut, and Maryland.
+- Western States: California, Washington, Utah, Colorado, Wyoming, and Alaska.
+- Southeastern State: Virginia.
+
+### Twelve Midwestern states account for the majority of states with an average median household income between $70,000 and $100,000, followed by five states from the West, three from the Northeast, three from the South, and three from the Southwest.
+- Midwestern States: North Dakota, South Dakota, Nebraska, Kansas, Missouri, Iowa, Minnesota, Wisconsin, Illinois, Indiana, Michigan, and Ohio.
+- Western States: Montana, Idaho, Oregon, Nevada, and Hawaii.
+- Northeastern States: Pennsylvania, Vermont, and Delaware.
+- Southeastern States: Florida, Georgia, and North Carolina.
+- Southwestern States: Texas, New Mexico, and Arizona.
+
+### In summary: 
+the United States exhibits a diverse economic landscape, with the Southeast hosting the majority of lower-income states, the Northeast and certain Western states presenting higher median household incomes, and the Midwest, along with a mix of states from other regions, reflecting middle-income levels. This distribution highlights the varying economic conditions and living standards across the country.
