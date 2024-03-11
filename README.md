@@ -298,18 +298,25 @@ https://public.tableau.com/app/profile/nanthawan.maneethong/viz/HouseholdIncomei
 
 
 - Eight Southeastern states account for the majority of states with an average median household income below $70,000, followed by one state each from the Northeast and the Southwest:
+  
+![Screenshot 2024-03-08 151325](https://github.com/NanManee/US_Household_Income_Project/assets/156528525/ab413ad5-74eb-43ea-b191-4f7457019914)
 
 	- Southeastern States: West Virginia, Kentucky, Tennessee, Arkansas, Louisiana, Mississippi, Alabama, and South Carolina.
 	- Northeastern State: Maine.
 	- Southwestern State: Oklahoma.
 
 - Seven Northeastern states account for the majority of states with an average median household income above $100,000, followed by six states from the West and one from the Southeast:
+  
+![Screenshot 2024-03-08 153133](https://github.com/NanManee/US_Household_Income_Project/assets/156528525/a3413f49-b16b-47bb-9269-b5e25beb41b1)
 
 	- Northeastern States: New York, New Hampshire, New Jersey, Massachusetts, Rhode Island, Connecticut, and Maryland.
 	- Western States: California, Washington, Utah, Colorado, Wyoming, and Alaska.
 	- Southeastern State: Virginia.
 
 - Twelve Midwestern states account for the majority of states with an average median household income between $70,000 and $100,000, followed by five states from the West, three from the Northeast, three from the South, and three from the Southwest.
+  
+![Screenshot 2024-03-11 102424](https://github.com/NanManee/US_Household_Income_Project/assets/156528525/552149e4-fcdb-436c-87b2-28d936969946)
+  
 	- Midwestern States: North Dakota, South Dakota, Nebraska, Kansas, Missouri, Iowa, Minnesota, Wisconsin, Illinois, Indiana, Michigan, and Ohio.
 	- Western States: Montana, Idaho, Oregon, Nevada, and Hawaii.
 	- Northeastern States: Pennsylvania, Vermont, and Delaware.
@@ -323,11 +330,9 @@ the United States exhibits a diverse economic landscape, with the Southeast host
 ### Answer to question 2: What are the top 5 cities with the highest average median household income, and what factors contribute to this higher income?
 
 - These are the top 5 cities with the highest average median household income:
-	- 1 San Diego	$109,419
- 	- 2 New York	$100,340
-  	- 3 Houston	$91,549
-  	- 4 Dallas	$89,019
-   	- 5 Las Vegas	$84,713
+
+![image](https://github.com/NanManee/US_Household_Income_Project/assets/156528525/9d2139c8-8362-40b3-a277-515d378b5d79)
+
   
 - Many factors contribute to the differences in the highest and lowest household income in each city. The common contributing factors may include:
 
